@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+  <link rel="stylesheet" href="checkout.css" />
+  <title>Checkout</title>
+</head>
+
+<body>
+  <navbar>
+    <a href="#" class="logo"> <img src="logo.png" alt="Cake Logo" /></a>
+  </navbar>
+  <div id="mainContainer">
+    <div id="checkoutContainer">
+      <h1>Checkout Details</h1>
+      <div class="groupedFields">
+        <div class="field">
+          <input type="text" name="email" maxlength="100" required />
+          <p>Email*</p>
+        </div>
+      </div>
+      <div class="groupedFields">
+        <h2>DELIVERY</h2>
+        <div class="fieldRow">
+          <div class="field">
+            <input type="text" name="firstName" maxlength="50" required />
+            <p>First name*</p>
+          </div>
+          <div class="field">
+            <input type="text" name="lastName" maxlength="50" required />
+            <p>Last name*</p>
+          </div>
+        </div>
+        <div class="field">
+          <input type="number" name="phoneNumber" required />
+          <p>Phone number for contact*</p>
+        </div>
+        <div class="field">
+          <input type="text" name="streetAddress" maxlength="100" required />
+          <p>Street address*</p>
+        </div>
+        <div class="field">
+          <input type="text" name="aptSuite" maxlength="50" required />
+          <p>Apt, Suite (optional)</p>
+        </div>
+        <div class="flexGap">
+          <div class="field">
+            <input type="text" name="city" maxlength="50" required />
+            <p>City*</p>
+          </div>
+          <div class="field">
+            <input type="text" name="region" maxlength="50" required />
+            <p>Region*</p>
+          </div>
+          <div class="field">
+            <input type="text" name="zipCode" maxlength="10" required />
+            <p>ZIP code*</p>
+          </div>
+          <div class="field">
+            <input type="text" name="country" maxlength="50" required />
+            <p>Country*</p>
+          </div>
+        </div>
+      </div>
+      <div id="paymentMethod" value-selected="creditCard" class="groupedFields">
+        <div>
+          <h2>PAYMENT METHOD</h2>
+        </div>
+        <input type="radio" id="pmCreditCard" name="paymentMethod" value="creditCard" />
+        <label for="pmCreditCard" name="pmLabel">
+          <h2>Credit Card</h2>
+        </label>
+        <input type="radio" id="pmGCash" name="paymentMethod" value="gCash" />
+        <label for="pmGCash" name="pmLabel">
+          <h2>GCash</h2>
+        </label>
+        <input type="radio" id="pmCod" name="paymentMethod" value="cod" />
+        <label for="pmCod" name="pmLabel">
+          <h2>Cash on Delivery</h2>
+        </label>
+        <div id="creditCardContainer">
+          <div id="fieldsCreditCard">
+            <h2>Credit Card Fields</h2>
+            <div class="field">
+              <input type="text" name="cardNumber" maxlength="50" required />
+              <p>Card number*</p>
+            </div>
+            <div class="field">
+              <input type="text" name="cardName" maxlength="100" required />
+              <p>Name on card*</p>
+            </div>
+            <div class="field">
+              <input type="text" name="cardExpiry" maxlength="20" required />
+              <p>Expiry date*</p>
+            </div>
+            <div class="field">
+              <input type="text" name="cardCVC" maxlength="10" required />
+              <p>CVC*</p>
+            </div>
+          </div>
+        </div>
+        <div id="gCashContainer">
+          <div id="fieldsGCash">
+            <h2>GCash Payment Fields</h2>
+            <div class="field">
+              <input type="text" name="gCashNumber" maxlength="20" required />
+              <p>GCash number*</p>
+            </div>
+            <div class="field">
+              <input type="text" name="gCashName" maxlength="100" required />
+              <p>Name on GCash*</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="cartContainer">
+      <h2>Cart Summary</h2>
+      <h3>Item Count: <span name="itemCount">1</span></h3>
+      <div class="itemWrapper flexGap">
+        <div class="item">
+          <div name="quantity">
+            <p>1x</p>
+          </div>
+          <div>
+            <p name="name">Product Name</p>
+            <p name="details">Description of the product.</p>
+          </div>
+          <div class="rightSection">
+            <p name="price"><span name="pricePlaceholder">0</span> PHP/per</p>
+            <div class="addRemove">
+              <button class="remove">
+                <h2>-</h2>
+              </button>
+              <button class="add">
+                <h2>+</h2>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <section>
+        <div>
+          <p>Subtotal (<span name="itemCount">1</span>):</p>
+          <p><span name="subTotalPrice">0</span> PHP</p>
+        </div>
+        <div>
+          <p>Est. delivery:</p>
+          <p><span name="deliveryPrice">0</span> PHP</p>
+        </div>
+        <div>
+          <p>Estimated tax:</p>
+          <p><span name="estimatedTax">0</span> PHP</p>
+        </div>
+      </section>
+      <section>
+        <div>
+          <p>Order total:</p>
+          <p><span name="totalPrice">0</span> PHP</p>
+        </div>
+      </section>
+      <button id="checkoutBtn">Checkout</button>
+    </div>
+  </div>
+  <footer>
+    <p>&copy Your Name</p>
+    <a href="https://web.facebook.com/" target="_blank" rel="noopener noreferrer">
+      <p><i class="fab fa-facebook-f"></i> Facebook</p>
+    </a>
+    <a href="@gmail.com" target="_blank" rel="noopener noreferrer">
+      <p><i class="fab fa-regular fa-envelope"></i> GMail</p>
+    </a>
+    <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
+      <p><i class="fab fa-instagram"></i> Instagram</p>
+    </a>
+  </footer>
+  <script src="checkout.js"></script>
+</body>
+
+</html>

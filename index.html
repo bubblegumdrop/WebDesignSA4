@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cookies | Home Page</title>
+    <link rel="icon" href="logo.png" type="image/png" />
+
+    <!-- font awesome cdn link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+
+    <!-- custom css file link -->
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <!-- header section start page -->
+
+    <navbar class="header">
+      <a href="#" class="logo"> <img src="logo.png" alt="Cake Logo" /></a>
+
+      <nav class="navbar">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#review">Review</a>
+        <a href="#blog">Blog</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <div class="icons">
+        <div id="menuBtn" class="fas fa-bars"></div>
+        <div id="searchBtn" class="fas fa-search"></div>
+        <div id="cartBtn" class="fas fa-shopping-cart"></div>
+        <div id="loginBtn" class="fas fa-user"></div>
+      </div>
+
+      <div class="searchForm hidden">
+        <input type="search" placeholder="Enter your search..." name="" id="searchBox" />
+        <label for="searchBox" class="fas fa-search" id="navSearchBtn"></label>
+      </div>
+    </navbar>
+
+    <!-- home section start -->
+
+    <section class="home" id="home">
+      <section class="about" id="about">
+        <div class="content">
+          <h3>Cookies</h3>
+          <p><b>Handcrafted treats to satisfy your cravings!</b></p>
+          <p>
+            Welcome to <b>Cookies</b>—where every bite is a taste of happiness! <br />Made with love and the finest
+            ingredients, our cookies are baked fresh just for you. <br />Explore our delightful selection, and let us
+            bring a little extra sweetness to your day!
+          </p>
+
+          <div class="buttons">
+            <a href="#" class="button order-now">Order Now</a>
+          </div>
+        </div>
+        <img decoding="async" src="set.png" alt="" />
+      </section>
+    </section>
+
+    <!-- category start  -->
+
+    <!-- products section -->
+
+    <div class="heading" id="productsSection">
+      <h1>Our Products</h1>
+    </div>
+
+    <section class="products">
+      <div class="displayHidden" id="noProductsIndicator">
+        <h1 style="font-size: 2em">There are no products that fit the your search sequence.</h1>
+      </div>
+      <div class="box-container itemWrapper">
+        <div class="box">
+          <div class="icons">
+            <a class="fas fa-shopping-cart" name="addToCart"></a>
+            <a class="fas fa-heart" name="addToFavorites"></a>
+            <a class="fas fa-eye" name="viewImage"></a>
+          </div>
+          <div class="img">
+            <img decoding="async" src="CC.png" name="image"/>
+          </div>
+          <div class="content">
+            <h3 name="displayName">Cookie Flavor</h3>
+            <div class="price">₱<span name="price">60</span></div>
+            <div class="stars" name="rating">
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- about section start -->
+    <div class="heading">
+      <h1>About Us</h1>
+    </div>
+
+    <section class="about">
+      <div class="img">
+        <img decoding="async" src="chill-guy.png" alt="" />
+      </div>
+
+      <div class="content">
+        <span>Welcome to our products</span>
+        <h3>Cake-A-Licious products</h3>
+        <p>Welcome to Cookies, your one-stop shop for the most irresistible cookies in town!</p>
+        <p>
+          Whether it’s a rich, gooey chocolate chip cookie, a warm cinnamon swirl, or a creative twist on a classic,
+          every cookie is baked with love, care, and a sprinkle of magic.
+        </p>
+        <a href="#" class="btn">read more</a>
+      </div>
+    </section>
+
+    <!-- gallery section start -->
+    <div class="heading">
+      <h1>Our Gallery</h1>
+    </div>
+
+    <section class="gallery">
+      <div class="box-container">
+        <div class="box">
+          <img decoding="async" src="MENU.png" alt="" />
+          <div class="icons">
+            <a href="#" class="fas fa-eye"></a>
+            <a href="#" class="fas fa-heart"></a>
+            <a href="#" class="fas fa-share-alt"></a>
+          </div>
+        </div>
+
+        <div class="box">
+          <img decoding="async" src="set.png" alt="" />
+          <div class="icons">
+            <a href="#" class="fas fa-eye"></a>
+            <a href="#" class="fas fa-heart"></a>
+            <a href="#" class="fas fa-share-alt"></a>
+          </div>
+        </div>
+
+        <div class="box">
+          <img decoding="async" src="Christmasbox.jpg" alt="" />
+          <div class="icons">
+            <a href="#" class="fas fa-eye"></a>
+            <a href="#" class="fas fa-heart"></a>
+            <a href="#" class="fas fa-share-alt"></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- client section start -->
+
+    <div class="heading">
+      <h1>Client's Review</h1>
+    </div>
+
+    <section class="info-container">
+      <div class="info">
+        <img decoding="async" src="img/icons-1.png" alt="" />
+        <div class="content">
+          <h3>Fast Delivery</h3>
+          <span>within 30 minutes</span>
+        </div>
+      </div>
+
+      <div class="info">
+        <img decoding="async" src="img/icons-2.png" alt="" />
+        <div class="content">
+          <h3>Available 24/7</h3>
+          <span>call us anytime</span>
+        </div>
+      </div>
+
+      <div class="info">
+        <img decoding="async" src="img/icons-3.png" alt="" />
+        <div class="content">
+          <h3>Easy Payments</h3>
+          <span>cash or credit</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- review section start -->
+
+    <section class="review" id="review">
+      <div class="box">
+        <div class="user">
+          <img decoding="async" src="img/pic-1.png" alt="" />
+          <div class="info">
+            <h3>name</h3>
+            <span>happ client</span>
+          </div>
+        </div>
+        <p>Lorem ipsum dolor sit amet, farhan aliqua. Ut enim ad minim veniam, quis</p>
+      </div>
+
+      <div class="box">
+        <div class="user">
+          <img decoding="async" src="img/pic-2.png" alt="" />
+          <div class="info">
+            <h3>name</h3>
+            <span>happ client</span>
+          </div>
+        </div>
+        <p>Lorem ipsum dolor sit amet, farhan aliqua. Ut enim ad minim veniam, quis</p>
+      </div>
+
+      <div class="box">
+        <div class="user">
+          <img decoding="async" src="img/pic-3.png" alt="" />
+          <div class="info">
+            <h3>name</h3>
+            <span>happ client</span>
+          </div>
+        </div>
+        <p>Lorem ipsum dolor sit amet, farhan aliqua. Ut enim ad minim veniam, quis</p>
+      </div>
+
+      <div class="box">
+        <div class="user">
+          <img decoding="async" src="img/pic-4.png" alt="" />
+          <div class="info">
+            <h3>name</h3>
+            <span>happ client</span>
+          </div>
+        </div>
+        <p>Lorem ipsum dolor sit amet, farhan aliqua. Ut enim ad minim veniam, quis</p>
+      </div>
+
+      <div class="box">
+        <div class="user">
+          <img decoding="async" src="img/pic-5.png" alt="" />
+          <div class="info">
+            <h3>name</h3>
+            <span>happ client</span>
+          </div>
+        </div>
+        <p>Lorem ipsum dolor sit amet, farhan aliqua. Ut enim ad minim veniam, quis</p>
+      </div>
+
+      <div class="box">
+        <div class="user">
+          <img decoding="async" src="img/pic-6.png" alt="" />
+          <div class="info">
+            <h3>name</h3>
+            <span>happ client</span>
+          </div>
+        </div>
+        <p>Lorem ipsum dolor sit amet, farhan aliqua. Ut enim ad minim veniam, quis</p>
+      </div>
+    </section>
+
+    <!-- blog section start -->
+
+    <div class="heading" id="blog">
+      <h1>Our Blogs</h1>
+    </div>
+
+    <section class="blogs">
+      <div class="box-container">
+        <div class="box">
+          <div class="img">
+            <img decoding="async" src="header.png" alt="" />
+          </div>
+          <div class="content">
+            <div class="icons">
+              <a href="#"> <i class="fsa fa-calendar"></i> 21 Oct, 2024</a>
+              <a href="#"> <i class="fsa fa-user"></i> by administrator </a>
+            </div>
+            <h3>title</h3>
+            <p>Lorem ipsum dolor sit amet, farhan aliqua. Ut enim ad minim veniam, quis</p>
+            <a href="#" class="btn">Read more...</a>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="img">
+            <img decoding="async" src="img/blog-2.jpg" alt="" />
+          </div>
+          <div class="content">
+            <div class="icons">
+              <a href="#"> <i class="fsa fa-calendar"></i> 12 Jan, 2022 </a>
+              <a href="#"> <i class="fsa fa-user"></i> by administrator </a>
+            </div>
+            <h3>blogs title page</h3>
+            <p>Lorem ipsum dolor sit amet, farhan aliqua. Ut enim ad minim veniam, quis</p>
+            <a href="#" class="btn">Read more...</a>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="img">
+            <img decoding="async" src="img/blog-6.jpg" alt="" />
+          </div>
+          <div class="content">
+            <div class="icons">
+              <a href="#"> <i class="fsa fa-calendar"></i> 12 jan, 2022 </a>
+              <a href="#"> <i class="fsa fa-user"></i> by administrator </a>
+            </div>
+            <h3>blogs title page</h3>
+            <p>Lorem ipsum dolor sit amet, farhan aliqua. Ut enim ad minim veniam, quis</p>
+            <a href="#" class="btn">Read more...</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- contect section start -->
+
+    <div class="heading" id="contact">
+      <h1>Contact Us</h1>
+    </div>
+
+    <section class="contact">
+      <div class="icons-container">
+        <div class="icons">
+          <i class="fas fa-phone"></i>
+          <h3>our number</h3>
+          <p>0929</p>
+        </div>
+
+        <div class="icons">
+          <i class="fas fa-envelope"></i>
+          <h3>our email</h3>
+          <p>@gmail.com</p>
+        </div>
+
+        <div class="icons">
+          <i class="fas fa-map-marker-alt"></i>
+          <h3>our address</h3>
+          <p>Philippines</p>
+        </div>
+      </div>
+
+      <div class="row">
+        <form action="">
+          <h3>get in touch</h3>
+          <div class="inputBox">
+            <input type="text" placeholder="enter your name" class="box" />
+            <input type="text" placeholder="enter your email" class="box" />
+          </div>
+          <div class="inputBox">
+            <input type="number" placeholder="enter your number" class="box" />
+            <input type="text" placeholder="enter your subject" class="box" />
+          </div>
+          <textarea placeholder=" your message" cols="30" rows="10"></textarea>
+          <input type="submit" value="send message" class="btn" />
+        </form>
+        <iframe
+          class="map"
+          src="https://maps"
+          width="600"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+        ></iframe>
+      </div>
+    </section>
+
+    <div class="space"></div>
+
+    <footer class="footer">
+      <div class="box-container">
+        <div class="box">
+          <div class="box">
+            <a href="https://web.facebook.com/" target="_blank" rel="noopener noreferrer">
+              <i class="fab fa-facebook-f"></i
+            ></a>
+            <a href="@gmail.com" target="_blank" rel="noopener noreferrer">
+              <i class="fab fa-regular fa-envelope"></i
+            ></a>
+            <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
+              <i class="fab fa-instagram"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <section class="credit">Created by</section>
+    <script src="./index.js"></script>
+  </body>
+</html>

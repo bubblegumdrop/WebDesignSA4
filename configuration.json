@@ -1,0 +1,76 @@
+{
+    "items": [
+        {
+            "id": "chocolateChip",
+            "short": "cc",
+            "name": "Chocolate Chip",
+            "description": "A classic chocolate chip cookie, loaded with chocolate chips and baked to perfection.",
+            "price": 60,
+            "stars": 4,
+            "image": "ChocolateChip.png"
+        },
+        {
+            "id": "doubleChocolate",
+            "short": "dc",
+            "name": "Double Chocolate",
+            "description": "A double chocolate cookie, loaded with chocolate chips and baked to perfection.",
+            "price": 60,
+            "stars": 4,
+            "image": "DoubleChocolate.png"
+        },
+        {
+            "id": "birthday",
+            "short": "bd",
+            "name": "Birthday",
+            "description": "A funfetti cookie, loaded with sprinkles and baked to perfection.",
+            "price": 60,
+            "stars": 4,
+            "image": "Birthday.png"
+        },
+        {
+            "id": "matcha",
+            "short": "mt",
+            "name": "Matcha",
+            "description": "A matcha cookie, loaded with white chocolate chips and baked to perfection.",
+            "price": 70,
+            "stars": 4,
+            "image": "Matcha.png"
+        },
+        {
+            "id": "redVelvet",
+            "short": "rv",
+            "name": "Red Velvet",
+            "description": "A red velvet cookie, loaded with white chocolate chips and baked to perfection.",
+            "price": 80,
+            "stars": 4,
+            "image": "RedVelvet.png"
+        },
+        {
+            "id": "biscafe",
+            "short": "bc",
+            "name": "Biscafe",
+            "description": "A coffee cookie, loaded with chocolate chips and baked to perfection.",
+            "price": 80,
+            "stars": 4,
+            "image": "Biscafe.png"
+        },
+        {
+            "id": "midnightSurprise",
+            "short": "ms",
+            "name": "Midnight Surprise",
+            "description": "A dark chocolate cookie, loaded with white chocolate chips and baked to perfection.",
+            "price": 80,
+            "stars": 4,
+            "image": "MidnightSurprise.png"
+        },
+        {
+            "id": "darkChocolateNutellaCake",
+            "short": "dc",
+            "name": "Dark Chocolate Nutella Cake",
+            "description": "A dark chocolate cake, loaded with Nutella and baked to perfection.",
+            "price": 80,
+            "stars": 4,
+            "image": "DarkChocolateNutellaCake.png"
+        }
+    ]
+}

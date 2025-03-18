@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Admin</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <link rel="stylesheet" href="admin.css" />
+</head>
+
+<body class="loggedOut">
+    <navbar>
+    </navbar>
+    <div id="statistics">
+        <div class="justifyCenter">
+            <h1>Business Statistics</h1>
+        </div>
+        <div class="statContainer">
+            <div class="justifyCenter">
+                <h3>Ongoing Orders</h4>
+                    <p id="ongoingOrders">0</p>
+            </div>
+            <div class="justifyCenter">
+                <h3>Cancelled Orders</h4>
+                    <p id="cancelledOrders">0</p>
+            </div>
+            <div class="justifyCenter">
+                <h3>Removed Orders</h4>
+                    <p id="removedOrders">0</p>
+            </div>
+            <div class="justifyCenter">
+                <h3>Total Orders</h4>
+                    <p id="totalOrders">0</p>
+            </div>
+        </div>
+        <div class="statContainer">
+            <div class="justifyCenter" style="background-color: #fff27a33">
+                <h3>Transaction Volume</h2>
+                    <p><span name="transactionVolume">0.00</span> PHP</p>
+            </div>
+            <div class="justifyCenter" style="background-color: #00ff0033">
+                <h3>Net Profit</h2>
+                    <p><span name="netProfit">0.00</span> PHP</p>
+            </div>
+            <div class="justifyCenter" style="background-color: #ffca3944">
+                <h3>Cookies Sold</h2>
+                    <p><span name="cookiesSold">0</span></p>
+            </div>
+        </div>
+    </div>
+    <div id="mainContainer">
+        <div id="recordPager">
+            <div class="controls">
+                <button id="prevRecord">Previous</button>
+                <div class="pages">
+                    <p>Page </p>
+                    <input type="number" id="page" value="1"></input>
+                    <p>/ <span id="pageCount">0</span></p>
+                </div>
+                <button id="nextRecord">Next</button>
+            </div>
+            <div id="noRecords"><h4>There are no records to be found!</h4></div>
+            <div class="recordWrapper">
+                <div class="record">
+                    <div class="flex">
+                        <div style="flex: 1">
+                            <h4>First Name</h4>
+                            <p name="firstName">your first name</p>
+                        </div>
+                        <div style="flex: 1">
+                            <h4>Last Name</h4>
+                            <p name="lastName">your last name</p>
+                        </div>
+                        <div style="flex: 2">
+                            <h4>Full Address</h4>
+                            <p name="fullAddress">your last name</p>
+                        </div>
+                    </div>
+                    <div class="flex">
+                        <div style="flex: 1">
+                            <h4>Cookie Count</h4>
+                            <p name="totalCookieCount">1</p>
+                        </div>
+                        <div style="flex: 3">
+                            <h4>Cookie Distribution</h4>
+                            <div name="cookieDistribution">
+                                <p><span name="count">0</span>x <span class="cookieFlavor">Cookie Flavor</span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex">
+                        <div style="flex: 1">
+                            <h4>Transaction Volume</h4>
+                            <p><span name="transactionVolume">1</span> PHP</p>
+                        </div>
+                        <div style="flex: 1">
+                            <h4>Net Profit</h4>
+                            <p><span name="netProfit">1</span> PHP</p>
+                        </div>
+                        <div style="flex: 1">
+                            <h4>Payment Method</h4>
+                            <p><span name="paymentMethod">1</span></p>
+                        </div>
+                    </div>
+                    <div class="footer">
+                        <p><span name="time">1d 2h 3m 4s</span> ago</p>
+                        <div class="btns">
+                            <button class="ongoing">Ongoing</button>
+                            <button class="confirm">Confirm</button>
+                            <button class="cancel">Cancel</button>
+                            <button class="remove">Remove</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer">
+                <div>
+                    <p>Showing #<span id="fromRecord">0</span> to #<span id="toRecord">0</span> Record of <span id="maxRecord">0</span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>&copy Your Name</p>
+        <a href="https://web.facebook.com/" target="_blank" rel="noopener noreferrer">
+            <p><i class="fab fa-facebook-f"></i> Facebook</p>
+        </a>
+        <a href="@gmail.com" target="_blank" rel="noopener noreferrer">
+            <p><i class="fab fa-regular fa-envelope"></i> GMail</p>
+        </a>
+        <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
+            <p><i class="fab fa-instagram"></i> Instagram</p>
+        </a>
+    </footer>
+    <script src="admin.js"></script>
+</body>
+
+</html>
