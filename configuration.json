@@ -5,7 +5,7 @@
             "short": "cc",
             "name": "Chocolate Chip",
             "description": "A classic chocolate chip cookie, loaded with chocolate chips and baked to perfection.",
-            "price": 60,
+            "price": 69,
             "stars": 4,
             "image": "ChocolateChip.png"
         },
@@ -14,7 +14,7 @@
             "short": "dc",
             "name": "Double Chocolate",
             "description": "A double chocolate cookie, loaded with chocolate chips and baked to perfection.",
-            "price": 60,
+            "price": 69,
             "stars": 4,
             "image": "DoubleChocolate.png"
         },
@@ -23,7 +23,7 @@
             "short": "bd",
             "name": "Birthday",
             "description": "A funfetti cookie, loaded with sprinkles and baked to perfection.",
-            "price": 60,
+            "price": 69,
             "stars": 4,
             "image": "Birthday.png"
         },
@@ -32,7 +32,7 @@
             "short": "mt",
             "name": "Matcha",
             "description": "A matcha cookie, loaded with white chocolate chips and baked to perfection.",
-            "price": 70,
+            "price": 79,
             "stars": 4,
             "image": "Matcha.png"
         },
@@ -41,7 +41,7 @@
             "short": "rv",
             "name": "Red Velvet",
             "description": "A red velvet cookie, loaded with white chocolate chips and baked to perfection.",
-            "price": 80,
+            "price": 89,
             "stars": 4,
             "image": "RedVelvet.png"
         },
@@ -50,7 +50,7 @@
             "short": "bc",
             "name": "Biscafe",
             "description": "A coffee cookie, loaded with chocolate chips and baked to perfection.",
-            "price": 80,
+            "price": 89,
             "stars": 4,
             "image": "Biscafe.png"
         },
@@ -59,7 +59,7 @@
             "short": "ms",
             "name": "Midnight Surprise",
             "description": "A dark chocolate cookie, loaded with white chocolate chips and baked to perfection.",
-            "price": 80,
+            "price": 89,
             "stars": 4,
             "image": "MidnightSurprise.png"
         },
@@ -68,7 +68,7 @@
             "short": "dc",
             "name": "Dark Chocolate Nutella Cake",
             "description": "A dark chocolate cake, loaded with Nutella and baked to perfection.",
-            "price": 80,
+            "price": 89,
             "stars": 4,
             "image": "DarkChocolateNutellaCake.png"
         }
