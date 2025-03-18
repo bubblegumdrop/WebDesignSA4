@@ -22,37 +22,6 @@ async function getConfig() {
 }
 
 getConfig().then((config) => {
-  const searchContainer = document.querySelector('.searchForm');
-
-  document.getElementById('searchBtn').addEventListener('click', function () {
-    searchContainer.classList.toggle('hidden');
-  });
-
-  const productsSection = document.querySelector('.products');
-  const searchField = searchContainer.querySelector('input[type="search"]');
-  document.getElementById('navSearchBtn').addEventListener('click', function (e) {
-    let searchValue = searchField.value;
-    let count = 0;
-    productsSection
-      .querySelector('.box-container')
-      .querySelectorAll('.box')
-      .forEach((box) => {
-        if (box.textContent.toLowerCase().includes(searchValue)) {
-          box.classList.remove('displayHidden');
-          count++;
-        } else {
-          box.classList.add('displayHidden');
-        }
-      });
-    const noResult = document.getElementById('noProductsIndicator');
-    if (count === 0) {
-      noResult.classList.remove('displayHidden');
-    } else {
-      noResult.classList.add('displayHidden');
-    }
-    document.getElementById('productsSection').scrollIntoView();
-  });
-
   const itemWrapper = document.querySelector('.itemWrapper');
   config.items?.forEach((item) => {
     const itemElement = itemWrapper.lastElementChild;
@@ -60,6 +29,7 @@ getConfig().then((config) => {
     itemWrapper.setAttribute('identifier', item.id);
     itemElement.querySelector('[name="displayName"]').textContent = item.name;
     itemElement.querySelector('[name="price"]').textContent = item.price;
+    itemElement.querySelector('[name="image"').src = item.image;
     const positive = item.stars;
     const blank = 5 - positive;
 
@@ -78,10 +48,14 @@ getConfig().then((config) => {
   itemWrapper.removeChild(itemWrapper.lastElementChild);
 
   document.getElementById('cartBtn').addEventListener('click', function () {
-    getCart().length > 0 ? (window.location.href = './checkout.html') : alert('Cart is empty');
+    getCart().length > 0 ? (window.location.href = '/checkout') : alert('Cart is empty');
   });
 
-  document.getElementById('loginBtn').addEventListener('click', function () {
-    window.location.href = './login.html';
+  document.getElementById('loginBtn')?.addEventListener('click', function () {
+    window.location.href = '/login';
+  });
+
+  document.getElementById('logoutBtn')?.addEventListener('click', function () {
+    window.location.href = '/logout';
   });
 });
